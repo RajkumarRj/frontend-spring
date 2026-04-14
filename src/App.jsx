@@ -8,7 +8,7 @@ import axios from "axios";
 function App() {
   const [data, setData] = useState("");
   const fetch = async () => {
-    const result = await axios.get("http://localhost:8080/");
+    const result = await axios.get("https://backend-spring-production-d3e7.up.railway.app/");
     console.log(result.data);
     setData(result.data);
   };
